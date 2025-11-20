@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Encuestas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <div class="container">
+        <h1>Votación de Actividades Extracurriculares</h1>
+        <form id="votacion" onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="actividad">Actividad preferida:</label>
+            <select id="actividad" name="actividad" required>
+                <option value="">Selecciona una actividad</option>
+                <option value="Fútbol">Fútbol</option>
+                <option value="Cine">Cine</option>
+                <option value="Música">Música</option>
+                <option value="Teatro">Teatro</option>
+            </select><br><br>
+
+            <input type="submit" value="Votar">
+        </form>
+        <div id="mensaje"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
